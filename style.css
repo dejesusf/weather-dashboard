@@ -1,0 +1,32 @@
+* {
+    font-family: 'Helvetica';
+}
+
+/*body*/
+body {
+    background: #bde0fe;
+}
+
+/*header*/
+header {
+    background: linear-gradient(180deg, #ffc8dd, 75%, #bde0fe);
+}
+
+h1 {
+    letter-spacing: -2px;
+}
+
+h4 {
+    letter-spacing: -1px;
+}
+
+/*input*/
+
+
+/*button*/
+
+
+/*ul display*/
+ul {
+    list-style: none;
+}
