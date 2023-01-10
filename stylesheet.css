@@ -1,0 +1,17 @@
+* {
+    font-family: 'Helvetica';
+}
+
+/*header*/
+header {
+    background: linear-gradient(180deg, #ffc8dd, #bde0fe);
+}
+
+h1 {
+    letter-spacing: -2px;
+}
+
+h4 {
+    letter-spacing: -1px;
+}
+
