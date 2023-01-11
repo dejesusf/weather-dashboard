@@ -19,15 +19,20 @@
             <aside class="col-sm-3 p-2">
                 <h4>search for a city:</h4>
                 <input id="search" placeholder="city"></input>
-                <button id="search-button">search</button>
-                <ul class="list-buttons"></ul>
+                <button  id="search-button">search</button>
+                <ul id="list-buttons"></ul>
             </aside>
 
             <section class="col-sm-9 p-2">
                 <div class="row justify-content-around">
                     <!-- Large container across screen to hold current conditions for searched city -->
                     <div class="col-sm-12 mb-2 border border-1 border-dark rounded">
-                        <div id="current-city"></div>
+                        <div id="current-city">
+                        <h4 id="city"></h4>
+                        <p id="temp"></p>
+                        <p id="wind"></p>
+                        <p id="humidity"></p>
+                        </div>
                     </div>
                     <!-- small containers for the 5 day forecast for searched city -->
                     <h4>5-day forecast:</h4>
@@ -54,7 +59,7 @@
             </section>
         </div>
     </main>
-
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js" integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./script.js"></script>
 </body>
