@@ -12,13 +12,14 @@
 <body>
     <header class="p-3 text-end">
         <h1 class="display-6">weather dashboard</h1>
+        <h6 id="currentTime"></h6>
     </header>
 
     <main class="container">
         <div class="row">
             <aside class="col-sm-3 p-2">
                 <h4>search for a city:</h4>
-                <input id="search" placeholder="city"></input>
+                <input id="search" type="text" required value="" placeholder="city"></input>
                 <button  id="search-button">search</button>
                 <ul id="list-buttons"></ul>
             </aside>
@@ -28,32 +29,35 @@
                     <!-- Large container across screen to hold current conditions for searched city -->
                     <div class="col-sm-12 mb-2 border border-1 border-dark rounded">
                         <div id="current-city">
-                        <h4 id="city"></h4>
-                        <p id="temp"></p>
-                        <p id="wind"></p>
-                        <p id="humidity"></p>
+                        <h4 id="city">City</h4>
+                        <p id="date">Date:</p>
+                        <p id="temp">Temp:</p>
+                        <p id="wind">Wind Speed:</p>
+                        <p id="humidity">Humidity:</p>
                         </div>
                     </div>
                     <!-- small containers for the 5 day forecast for searched city -->
-                    <h4>5-day forecast:</h4>
-                    <div class="col-sm-2 border border-1 border-dark rounded">
-                        <p id="day2"></p>
-                    </div>
+                    <div class="hidden">
+                        <h4>5-day forecast:</h4>
+                        <div class="col-sm-2 border border-1 border-dark rounded">
+                            <p id="day2"></p>
+                        </div>
 
-                    <div class="col-sm-2 border border-1 border-dark rounded">
-                        <p class="card-text"></p>
-                    </div>
-                    
-                    <div class="col-sm-2 border border-1 border-dark rounded">
-                        <p class="card-text"></p>
-                    </div>
+                        <div class="col-sm-2 border border-1 border-dark rounded">
+                            <p class="card-text"></p>
+                        </div>
+                        
+                        <div class="col-sm-2 border border-1 border-dark rounded">
+                            <p class="card-text"></p>
+                        </div>
 
-                    <div class="col-sm-2 border border-1 border-dark rounded">
-                        <p class="card-text"></p>
-                    </div>
-                    
-                    <div class="col-sm-2 border border-1 border-dark rounded">
-                        <p class="card-text"></p>
+                        <div class="col-sm-2 border border-1 border-dark rounded">
+                            <p class="card-text"></p>
+                        </div>
+                        
+                        <div class="col-sm-2 border border-1 border-dark rounded">
+                            <p class="card-text"></p>
+                        </div>
                     </div>
                 </div>
             </section>
