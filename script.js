@@ -35,21 +35,21 @@ function renderSearchHistory() {
 
         newBtn.innerHTML=cityValue;
         newLi.appendChild(newBtn);
-        
-        fetch ('https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=${APIKey}', {
-            cache:'reload',
+
+        searchBtn.addEventListener("click", ()=>{
+        fetch ('https://api.openweathermap.org/data/2.5/weather?q='+cityValue+'&appid='+APIKey)
         })
         .then(function (response) {
             return response.JSON();
         })
         .then (function (data) {
-            console.log(data);
             var date= dayjs().format('MMMM D, YYYY');
             
             citySel.textContent(data.name);
             today.textContent('Date: '+date);
             cityTemp.textContent('Temp: '+data.temp);
-            cityWind.textContent('Wind Speed: '+data.wind.speed);cityHumidity.textContent('Humidity: '+data.main.humidity);})
+            cityWind.textContent('Wind Speed: '+data.wind.speed);cityHumidity.textContent('Humidity: '+data.main.humidity);
+        })
     }
 }
 
