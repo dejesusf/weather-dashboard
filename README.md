@@ -8,7 +8,7 @@ Unfortunately at this time, I was unsuccessful at fetching the website data and 
 ## Website
 Here is a screenshot of how the website looks like:
 
-![screenshot of weather dashboard homepage](./weather%20homepage.png)
+![screenshot of weather dashboard homepage](./assets/weather%20homepage.png)
 
 ## Link
 
